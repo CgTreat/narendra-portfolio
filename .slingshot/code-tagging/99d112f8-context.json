@@ -1,0 +1,15 @@
+{
+  "filename": "package.json",
+  "path": "package.json",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "604d2800": {
+      "value": "Refer the colour, animation, interaction, scroll animation, footer animation, etc. from this website https://lukebaffait.fr"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

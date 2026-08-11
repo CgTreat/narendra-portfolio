@@ -1,0 +1,66 @@
+{
+  "package.json": {
+    "filename": "package.json",
+    "path": "package.json",
+    "version": "1.2",
+    "contextFile": "99d112f8-context.json",
+    "chunks": {
+      "406c2c": {
+        "user": "Narendra Keshkar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1786484468,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.1.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "604d2800"
+        },
+        "hash": "4cf74669",
+        "messageId": "system_e84a81a0-95cc-11f1-88b8-c70b1e0dbe04",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Narendra Keshkar\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/12/2026, 3:11:08 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "11": {
+        "chunkId": "406c2c",
+        "hash": "83c9bdd6",
+        "encoded": "%22dependencies%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "406c2c",
+        "hash": "0e8a153a",
+        "encoded": "%22react%22:%20%22%5E18.3.1%22,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "406c2c",
+        "hash": "28e86660",
+        "encoded": "%22react-dom%22:%20%22%5E18.3.1%22,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "406c2c",
+        "hash": "d8661bd9",
+        "encoded": "%22gsap%22:%20%22%5E3.12.5%22,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "406c2c",
+        "hash": "ad87adff",
+        "encoded": "%22@studio-freight/lenis%22:%20%22%5E1.0.42%22",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "406c2c",
+        "hash": "e0024018",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

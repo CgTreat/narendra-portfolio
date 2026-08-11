@@ -1,33 +1,37 @@
 .profile-section {
-  padding: 6rem 3rem;
+  padding: 8rem 3rem;
   max-width: 1400px;
   margin: 0 auto;
   background-color: transparent;
+  position: relative;
 }
 
 .profile-container {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 4rem;
+  grid-template-columns: 350px 1fr;
+  gap: 5rem;
   align-items: center;
 }
 
 .profile-image-wrapper {
   position: relative;
+  will-change: transform;
 }
 
 .profile-image {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
-  transition: transform 0.3s ease;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid var(--border-color);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .profile-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  border-color: var(--accent-color);
 }
 
 .profile-image img {
@@ -35,22 +39,69 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-image:hover img {
+  transform: scale(1.1);
 }
 
 .profile-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  background: linear-gradient(135deg, rgba(255, 30, 0, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.profile-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 30, 0, 0.2), transparent 60%);
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
 }
 
 .profile-initials {
-  font-size: 5rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.3);
+  font-size: 6rem;
+  font-weight: 200;
+  color: var(--text-secondary);
   letter-spacing: 0.1em;
+  position: relative;
+  z-index: 1;
+}
+
+.image-border {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.profile-image-wrapper:hover .image-border {
+  opacity: 0.5;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
 
 .profile-info {
@@ -58,26 +109,55 @@
 }
 
 .profile-name {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-name:hover {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--text-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .profile-title {
   font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 2px;
-  opacity: 0.5;
-  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.profile-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
 }
 
 .profile-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  line-height: 1.8;
   font-weight: 300;
   max-width: 600px;
-  opacity: 0.9;
+  color: var(--text-secondary);
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-description:hover {
+  color: var(--text-primary);
 }
 
 @media (max-width: 968px) {
@@ -92,12 +172,12 @@
   }
   
   .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
   
   .profile-initials {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   
   .profile-info {
@@ -107,19 +187,28 @@
   .profile-description {
     margin: 0 auto;
   }
+  
+  .profile-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 768px) {
   .profile-section {
-    padding: 4rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
   
   .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
   
   .profile-initials {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+  
+  .profile-description {
+    font-size: 1.1rem;
   }
 }
