@@ -1,0 +1,114 @@
+{
+  "src\\App.css": {
+    "filename": "App.css",
+    "path": "src\\App.css",
+    "version": "1.2",
+    "contextFile": "10778f39-context.json",
+    "chunks": {
+      "4f33c0": {
+        "user": "Narendra Keshkar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1786484219,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.1.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "65fe13bd"
+        },
+        "hash": "9f8a2ba8",
+        "messageId": "system_8efabca0-95cc-11f1-88b8-c70b1e0dbe04",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Narendra Keshkar\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/12/2026, 3:06:59 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "4f33c0",
+        "hash": "2db7d351",
+        "encoded": ".App%20%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "4f33c0",
+        "hash": "2b1fef5f",
+        "encoded": "min-height:%20100vh;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "4f33c0",
+        "hash": "615d19a8",
+        "encoded": "display:%20flex;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "4f33c0",
+        "hash": "e7387939",
+        "encoded": "flex-direction:%20column;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "4f33c0",
+        "hash": "007f1612",
+        "encoded": "background-color:%20#000000;",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "4f33c0",
+        "hash": "02efb5dd",
+        "encoded": "color:%20#ffffff;",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "4f33c0",
+        "hash": "b32de424",
+        "encoded": "position:%20relative;",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "4f33c0",
+        "hash": "102658a5",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "4f33c0",
+        "hash": "b3e72049",
+        "encoded": "main%20%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "4f33c0",
+        "hash": "976cd56e",
+        "encoded": "flex:%201;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "4f33c0",
+        "hash": "1ee7489b",
+        "encoded": "padding-top:%2080px;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "4f33c0",
+        "hash": "ebbfa00f",
+        "encoded": "position:%20relative;",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "4f33c0",
+        "hash": "7fcca9a7",
+        "encoded": "z-index:%201;",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "4f33c0",
+        "hash": "66d45cc1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

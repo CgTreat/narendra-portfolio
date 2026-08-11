@@ -6,6 +6,9 @@
   "promptMessage": {
     "c69c26ab": {
       "value": "check if its done"
+    },
+    "2c42c327": {
+      "value": "good now update the design based on current design in this domain https://narendrakeshkar.com"
     }
   },
   "localPrompts": {},

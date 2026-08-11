@@ -1,0 +1,125 @@
+.profile-section {
+  padding: 6rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.profile-image-wrapper {
+  position: relative;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.02);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-initials {
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.1em;
+}
+
+.profile-info {
+  padding-left: 2rem;
+}
+
+.profile-name {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.profile-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+.profile-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 300;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+@media (max-width: 968px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .profile-image-wrapper {
+    justify-self: center;
+  }
+  
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .profile-initials {
+    font-size: 4rem;
+  }
+  
+  .profile-info {
+    padding-left: 0;
+  }
+  
+  .profile-description {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .profile-initials {
+    font-size: 3rem;
+  }
+}

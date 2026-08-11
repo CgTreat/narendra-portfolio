@@ -1,0 +1,186 @@
+{
+  "src\\App.jsx": {
+    "filename": "App.jsx",
+    "path": "src\\App.jsx",
+    "version": "1.2",
+    "contextFile": "a70cf96c-context.json",
+    "chunks": {
+      "979bf7": {
+        "user": "Narendra Keshkar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1786484202,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.1.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "65fe13bd"
+        },
+        "hash": "43d99586",
+        "messageId": "system_8efabca0-95cc-11f1-88b8-c70b1e0dbe04",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Narendra Keshkar\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/12/2026, 3:06:42 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "979bf7",
+        "hash": "cddaba64",
+        "encoded": "import%20'./App.css'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "979bf7",
+        "hash": "59b7e8a6",
+        "encoded": "import%20AnimatedBackground%20from%20'./components/AnimatedBackground'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "979bf7",
+        "hash": "f74bddd2",
+        "encoded": "import%20Header%20from%20'./components/Header'",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "979bf7",
+        "hash": "e37d3102",
+        "encoded": "import%20Hero%20from%20'./components/Hero'",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "979bf7",
+        "hash": "60a4b212",
+        "encoded": "import%20ProfileSection%20from%20'./components/ProfileSection'",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "979bf7",
+        "hash": "3dc8848f",
+        "encoded": "import%20About%20from%20'./components/About'",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "979bf7",
+        "hash": "63acbd6c",
+        "encoded": "import%20Projects%20from%20'./components/Projects'",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "979bf7",
+        "hash": "e05919d8",
+        "encoded": "import%20Contact%20from%20'./components/Contact'",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "979bf7",
+        "hash": "a60330dc",
+        "encoded": "import%20Footer%20from%20'./components/Footer'",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "979bf7",
+        "hash": "d33104b3",
+        "encoded": "function%20App()%20%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "979bf7",
+        "hash": "588b7e4f",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "979bf7",
+        "hash": "c7fd5104",
+        "encoded": "%3Cdiv%20className=%22App%22%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "979bf7",
+        "hash": "ca9dd6d6",
+        "encoded": "%3CAnimatedBackground%20/%3E",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "979bf7",
+        "hash": "0ec0605b",
+        "encoded": "%3CHeader%20/%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "979bf7",
+        "hash": "520e4bde",
+        "encoded": "%3Cmain%3E",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "979bf7",
+        "hash": "6ff9c348",
+        "encoded": "%3CHero%20/%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "979bf7",
+        "hash": "5170f85c",
+        "encoded": "%3CProfileSection%20/%3E",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "979bf7",
+        "hash": "eb31b57f",
+        "encoded": "%3CAbout%20/%3E",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "979bf7",
+        "hash": "90f60f23",
+        "encoded": "%3CProjects%20/%3E",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "979bf7",
+        "hash": "4757c647",
+        "encoded": "%3CContact%20/%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "979bf7",
+        "hash": "a9641468",
+        "encoded": "%3C/main%3E",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "979bf7",
+        "hash": "85bc23c6",
+        "encoded": "%3CFooter%20/%3E",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "979bf7",
+        "hash": "c102ccac",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "979bf7",
+        "hash": "e30ea252",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "979bf7",
+        "hash": "840004ae",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "979bf7",
+        "hash": "5e01a115",
+        "encoded": "export%20default%20App",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

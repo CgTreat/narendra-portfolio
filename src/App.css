@@ -4,11 +4,14 @@
   flex-direction: column;
   background-color: #000000;
   color: #ffffff;
+  position: relative;
 }
 
 main {
   flex: 1;
   padding-top: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Smooth scrolling */

@@ -1,0 +1,15 @@
+{
+  "filename": "App.jsx",
+  "path": "src\\App.jsx",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "65fe13bd": {
+      "value": "extract the animated background and my photo and add in website."
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}
