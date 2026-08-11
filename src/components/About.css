@@ -1,0 +1,44 @@
+.about {
+  background-color: rgba(50, 50, 50, 0.3);
+}
+
+.about-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .about {
+    background-color: rgba(240, 240, 240, 0.5);
+  }
+  
+  .about-text p {
+    color: #333;
+  }
+}

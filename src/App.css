@@ -1,0 +1,33 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #646cff;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+}
