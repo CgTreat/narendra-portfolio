@@ -6,14 +6,14 @@ A modern, responsive portfolio website built with React and Vite.
 
 ## Features
 
-- 🎨 Modern and clean design
+- 🎨 Minimalist black & white design aesthetic
 - 📱 Fully responsive across all devices
 - ⚡ Fast performance with Vite
-- 🎯 Smooth scrolling navigation
-- 🌗 Dark/Light mode support
-- 💼 Project showcase
-- 🛠️ Skills display
-- 📧 Contact form
+- 🎯 Smooth scrolling navigation with numbered sections
+- 🖤 Professional dark theme
+- 💼 Project showcase with metrics
+- 💭 Perspective/philosophy section
+- 📧 Professional contact information
 
 ## Tech Stack
 
