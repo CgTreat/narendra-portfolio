@@ -1,79 +1,53 @@
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 6rem 3rem;
+  background-color: #000000;
 }
 
 .hero-content {
-  max-width: 800px;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  animation: fadeInUp 0.8s ease-out;
-}
-
-.highlight {
-  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  color: #888;
-  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-name {
+  margin-bottom: 3rem;
+}
+
+.name-line {
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.02em;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-.hero-description {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.7);
+.hero-tagline {
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.3;
+  max-width: 900px;
+  margin-bottom: 4rem;
   animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
+.hero-location {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0.5;
   animation: fadeInUp 0.8s ease-out 0.6s both;
-}
-
-.btn {
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s;
-  display: inline-block;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
-  color: white;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(100, 108, 255, 0.3);
-}
-
-.btn-secondary {
-  border: 2px solid #646cff;
-  color: #646cff;
-  background: transparent;
-}
-
-.btn-secondary:hover {
-  background: #646cff;
-  color: white;
-  transform: translateY(-2px);
 }
 
 @keyframes fadeInUp {
@@ -88,34 +62,13 @@
 }
 
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .hero-description {
-    font-size: 1rem;
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn {
-    width: 200px;
-  }
-}
-
-@media (prefers-color-scheme: light) {
   .hero {
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    padding: 4rem 1.5rem;
+    min-height: 80vh;
   }
   
-  .hero-description {
-    color: #666;
+  .hero-subtitle,
+  .hero-location {
+    font-size: 0.7rem;
   }
 }

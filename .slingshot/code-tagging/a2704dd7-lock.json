@@ -1,0 +1,168 @@
+{
+  "src\\index.css": {
+    "filename": "index.css",
+    "path": "src\\index.css",
+    "version": "1.2",
+    "contextFile": "a2704dd7-context.json",
+    "chunks": {
+      "f1d0ef": {
+        "user": "Narendra Keshkar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1786483818,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.1.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2c42c327"
+        },
+        "hash": "bac37299",
+        "messageId": "system_c118e550-95cb-11f1-88b8-c70b1e0dbe04",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Narendra Keshkar\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/12/2026, 3:00:18 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "f1d0ef",
+        "hash": "223b34e1",
+        "encoded": ":root%20%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "f1d0ef",
+        "hash": "a2e1a600",
+        "encoded": "font-family:%20'Inter',%20-apple-system,%20BlinkMacSystemFont,%20'Segoe%20UI',%20system-ui,%20sans-serif;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "f1d0ef",
+        "hash": "949b9011",
+        "encoded": "line-height:%201.6;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "f1d0ef",
+        "hash": "79d732d4",
+        "encoded": "font-weight:%20400;",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "f1d0ef",
+        "hash": "02efb5dd",
+        "encoded": "color:%20#ffffff;",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "f1d0ef",
+        "hash": "4a128d0e",
+        "encoded": "background-color:%20#000000;",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "f1d0ef",
+        "hash": "21e8d2a4",
+        "encoded": "font-synthesis:%20none;",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "f1d0ef",
+        "hash": "e3db729f",
+        "encoded": "text-rendering:%20optimizeLegibility;",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "f1d0ef",
+        "hash": "91a5794b",
+        "encoded": "-webkit-font-smoothing:%20antialiased;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "f1d0ef",
+        "hash": "acaa8125",
+        "encoded": "-moz-osx-font-smoothing:%20grayscale;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "f1d0ef",
+        "hash": "6a3f2143",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "f1d0ef",
+        "hash": "97a6dc09",
+        "encoded": "*%20%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "f1d0ef",
+        "hash": "5a92d230",
+        "encoded": "margin:%200;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "f1d0ef",
+        "hash": "22095f46",
+        "encoded": "padding:%200;",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "f1d0ef",
+        "hash": "3fdcfa0b",
+        "encoded": "box-sizing:%20border-box;",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "f1d0ef",
+        "hash": "ee20bc2a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "f1d0ef",
+        "hash": "f2147a48",
+        "encoded": "body%20%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "f1d0ef",
+        "hash": "b7ff19fb",
+        "encoded": "margin:%200;",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "f1d0ef",
+        "hash": "77751a01",
+        "encoded": "min-width:%20320px;",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "f1d0ef",
+        "hash": "d820e578",
+        "encoded": "min-height:%20100vh;",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "f1d0ef",
+        "hash": "57fb0768",
+        "encoded": "background-color:%20#000000;",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "f1d0ef",
+        "hash": "0a1f6c22",
+        "encoded": "color:%20#ffffff;",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "f1d0ef",
+        "hash": "e256b81a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

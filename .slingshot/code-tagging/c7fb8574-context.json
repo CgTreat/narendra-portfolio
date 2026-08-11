@@ -1,0 +1,15 @@
+{
+  "filename": "deploy.yml",
+  "path": ".github\\workflows\\deploy.yml",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "2be9943e": {
+      "value": "check again"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

@@ -1,0 +1,66 @@
+{
+  ".github\\workflows\\deploy.yml": {
+    "filename": "deploy.yml",
+    "path": ".github\\workflows\\deploy.yml",
+    "version": "1.2",
+    "contextFile": "c7fb8574-context.json",
+    "chunks": {
+      "dc305b": {
+        "user": "Narendra Keshkar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1786483575,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.1.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2be9943e"
+        },
+        "hash": "fbf409fb",
+        "messageId": "system_d86a3ed0-95ca-11f1-88b8-c70b1e0dbe04",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Narendra Keshkar\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/12/2026, 2:56:15 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "24": {
+        "chunkId": "dc305b",
+        "hash": "5ec30c15",
+        "encoded": "-%20name:%20Setup%20Node.js",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "dc305b",
+        "hash": "f9da1683",
+        "encoded": "uses:%20actions/setup-node@v4",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "dc305b",
+        "hash": "8de3d9e7",
+        "encoded": "with:",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "dc305b",
+        "hash": "50170773",
+        "encoded": "node-version:%20'20'",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "dc305b",
+        "hash": "c7ce95d2",
+        "encoded": "-%20name:%20Install%20dependencies",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "dc305b",
+        "hash": "7ea4b1c5",
+        "encoded": "run:%20npm%20install",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

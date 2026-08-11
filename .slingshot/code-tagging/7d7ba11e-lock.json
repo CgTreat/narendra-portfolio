@@ -1,0 +1,48 @@
+{
+  "README.md": {
+    "filename": "README.md",
+    "path": "README.md",
+    "version": "1.2",
+    "contextFile": "7d7ba11e-context.json",
+    "chunks": {
+      "43a905": {
+        "user": "Narendra Keshkar",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1786482170,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.1.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c69c26ab"
+        },
+        "hash": "d39fdab9",
+        "messageId": "system_74921fc0-95c7-11f1-88b8-c70b1e0dbe04",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Narendra Keshkar\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/12/2026, 2:32:50 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "43a905",
+        "hash": "8402c780",
+        "encoded": "#%20Narendra%20Keshkar%20-%20Portfolio",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "43a905",
+        "hash": "98bb3918",
+        "encoded": "A%20modern,%20responsive%20portfolio%20website%20built%20with%20React%20and%20Vite.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "43a905",
+        "hash": "efe595ec",
+        "encoded": "%F0%9F%8C%90%20**Live%20Demo**:%20%5BView%20Portfolio%5D(https://cgtreat.github.io/narendra-portfolio/)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

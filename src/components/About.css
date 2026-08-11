@@ -1,44 +1,91 @@
 .about {
-  background-color: rgba(50, 50, 50, 0.3);
+  padding: 8rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #000000;
 }
 
-.about-content {
+.section-label {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   align-items: center;
+  margin-bottom: 4rem;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  opacity: 0.5;
 }
 
-.about-text {
-  flex: 1;
+.section-number {
+  font-weight: 400;
 }
 
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
+.section-title {
+  font-weight: 500;
+}
+
+.section-heading {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 4rem;
+}
+
+.section-heading div {
+  margin-bottom: 0.5rem;
+}
+
+.about-intro {
+  max-width: 900px;
+  margin-bottom: 6rem;
+}
+
+.intro-text {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  line-height: 1.6;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  max-width: 1200px;
+}
+
+.principle {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+}
+
+.principle-number {
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.4;
   margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
 }
 
-.about-text p:last-child {
-  margin-bottom: 0;
+.principle-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.principle-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-  }
-  
-  .about-text p {
-    font-size: 1rem;
-  }
-}
-
-@media (prefers-color-scheme: light) {
   .about {
-    background-color: rgba(240, 240, 240, 0.5);
+    padding: 5rem 1.5rem;
   }
   
-  .about-text p {
-    color: #333;
+  .principles {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }

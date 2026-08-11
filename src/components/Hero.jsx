@@ -4,17 +4,13 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <h1 className="hero-title">
-          Hi, I'm <span className="highlight">Narendra Keshkar</span>
+        <div className="hero-subtitle">(PORTFOLIO — 2009 / 2026)</div>
+        <h1 className="hero-name">
+          <div className="name-line">Narendra</div>
+          <div className="name-line">Keshkar</div>
         </h1>
-        <p className="hero-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-        <p className="hero-description">
-          I create beautiful, functional, and user-friendly web applications.
-        </p>
-        <div className="hero-buttons">
-          <a href="#projects" className="btn btn-primary">View My Work</a>
-          <a href="#contact" className="btn btn-secondary">Get In Touch</a>
-        </div>
+        <h2 className="hero-tagline">Designing clarity for complex products</h2>
+        <div className="hero-location">MUMBAI · 19.07°N / 72.87°E</div>
       </div>
     </section>
   )
