@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React and Vite.
 
+🌐 **Live Demo**: [View Portfolio](https://cgtreat.github.io/narendra-portfolio/)
+
 ## Features
 
 - 🎨 Modern and clean design
