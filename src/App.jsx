@@ -1,4 +1,5 @@
 import './App.css'
+import SmoothScroll from './components/SmoothScroll'
 import AnimatedBackground from './components/AnimatedBackground'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -11,6 +12,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
+      <SmoothScroll />
       <AnimatedBackground />
       <Header />
       <main>
