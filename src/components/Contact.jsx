@@ -1,8 +1,55 @@
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Contact.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function Contact() {
+  const sectionRef = useRef(null)
+  const contentRef = useRef(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // 3D entrance from bottom
+      gsap.from(contentRef.current, {
+        opacity: 0,
+        rotationX: 45,
+        z: -200,
+        y: 100,
+        duration: 1.5,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 70%',
+          end: 'top 30%',
+          scrub: 1,
+        },
+      })
+
+      // Animate individual elements
+      const elements = contentRef.current.querySelectorAll('.contact-intro, .building-list, .location-info, .contact-methods')
+      gsap.from(elements, {
+        opacity: 0,
+        y: 40,
+        rotationX: 20,
+        stagger: 0.15,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: contentRef.current,
+          start: 'top 70%',
+          end: 'top 40%',
+          scrub: 1,
+        },
+      })
+    }, sectionRef)
+
+    return () => ctx.revert()
+  }, [])
+
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact" ref={sectionRef}>
       <div className="section-label">
         <span className="section-number">(03)</span>
         <span className="section-title">CONTACT</span>
@@ -13,7 +60,7 @@ function Contact() {
         <div>clarity at scale.</div>
       </h2>
 
-      <div className="contact-content">
+      <div className="contact-content" ref={contentRef}>
         <div className="contact-info">
           <p className="contact-intro">If you're building:</p>
           <ul className="building-list">

@@ -1,6 +1,7 @@
 import './App.css'
 import SmoothScroll from './components/SmoothScroll'
 import AnimatedBackground from './components/AnimatedBackground'
+import Cursor3D from './components/Cursor3D'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import ProfileSection from './components/ProfileSection'
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <SmoothScroll />
       <AnimatedBackground />
+      <Cursor3D />
       <Header />
       <main>
         <Hero />

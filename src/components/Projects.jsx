@@ -1,6 +1,14 @@
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './Projects.css'
 
+gsap.registerPlugin(ScrollTrigger)
+
 function Projects() {
+  const sectionRef = useRef(null)
+  const projectsRef = useRef(null)
+
   const projects = [
     {
       title: 'E-Commerce Platform',
@@ -22,8 +30,45 @@ function Projects() {
     }
   ]
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const cards = projectsRef.current.children
+      
+      Array.from(cards).forEach((card, index) => {
+        // 3D entrance animation
+        gsap.from(card, {
+          opacity: 0,
+          rotationX: 45,
+          rotationY: index % 2 === 0 ? -15 : 15,
+          z: -300,
+          duration: 1.5,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 85%',
+            end: 'top 45%',
+            scrub: 1,
+          },
+        })
+
+        // Parallax depth effect
+        gsap.to(card, {
+          y: -80 * (index + 1) * 0.5,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 2,
+          },
+        })
+      })
+    }, sectionRef)
+
+    return () => ctx.revert()
+  }, [])
+
   return (
-    <section id="work" className="projects">
+    <section id="work" className="projects" ref={sectionRef}>
       <div className="section-label">
         <span className="section-number">(02)</span>
         <span className="section-title">WHAT I HAVE BUILT</span>
@@ -40,17 +85,19 @@ function Projects() {
         </p>
       </div>
 
-      <div className="projects-grid">
+      <div className="projects-grid" ref={projectsRef}>
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h4 className="project-title">{project.title}</h4>
-            <p className="project-description">{project.description}</p>
-            <div className="project-metrics">
-              {project.metrics.map((metric, metricIndex) => (
-                <span key={metricIndex} className="metric">{metric}</span>
-              ))}
+            <div className="card-inner">
+              <h4 className="project-title">{project.title}</h4>
+              <p className="project-description">{project.description}</p>
+              <div className="project-metrics">
+                {project.metrics.map((metric, metricIndex) => (
+                  <span key={metricIndex} className="metric">{metric}</span>
+                ))}
+              </div>
+              <a href={project.link} className="project-link">Read the case study →</a>
             </div>
-            <a href={project.link} className="project-link">Read the case study →</a>
           </div>
         ))}
       </div>

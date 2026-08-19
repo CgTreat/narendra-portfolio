@@ -1,0 +1,66 @@
+.cursor-3d,
+.cursor-dot {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor-3d {
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: border-color 0.3s ease;
+}
+
+.cursor-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 30, 0, 0.2), transparent 70%);
+  animation: pulse-cursor 2s ease-in-out infinite;
+}
+
+@keyframes pulse-cursor {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+a, button, .project-card, .principle {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  .cursor-3d,
+  .cursor-dot {
+    display: none;
+  }
+  
+  body,
+  a,
+  button {
+    cursor: auto;
+  }
+}
