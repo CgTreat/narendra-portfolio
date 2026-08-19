@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import GlassCard from './GlassCard'
 import './About.css'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -8,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger)
 function About() {
   const sectionRef = useRef(null)
   const headingRef = useRef(null)
-  const principlesRef = useRef(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -26,35 +26,6 @@ function About() {
           end: 'top 30%',
           scrub: 1,
         },
-      })
-
-      // 3D perspective cards
-      const principles = principlesRef.current.children
-      Array.from(principles).forEach((card, index) => {
-        gsap.from(card, {
-          opacity: 0,
-          rotationY: index % 2 === 0 ? -45 : 45,
-          z: -200,
-          duration: 1.5,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: card,
-            start: 'top 80%',
-            end: 'top 40%',
-            scrub: 1,
-          },
-        })
-
-        // Parallax effect
-        gsap.to(card, {
-          y: -50 * (index + 1),
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: 2,
-          },
-        })
       })
     }, sectionRef)
 
@@ -79,30 +50,30 @@ function About() {
         </p>
       </div>
 
-      <div className="principles" ref={principlesRef}>
-        <div className="principle">
+      <div className="principles">
+        <GlassCard delay={0}>
           <div className="principle-number">I</div>
           <h6 className="principle-title">The invisible inertia.</h6>
           <p className="principle-text">
             Smart leaders fail not from lack of sight — but from inertia. I've sat in those rooms. Seeing it is not enough. Someone has to move.
           </p>
-        </div>
+        </GlassCard>
 
-        <div className="principle">
+        <GlassCard delay={0.2}>
           <div className="principle-number">II</div>
           <h6 className="principle-title">The problem is never the problem</h6>
           <p className="principle-text">
             The real leverage is five steps back. Designers who think laterally are worth ten who think vertically.
           </p>
-        </div>
+        </GlassCard>
 
-        <div className="principle">
+        <GlassCard delay={0.4}>
           <div className="principle-number">III</div>
           <h6 className="principle-title">A creative with business perspective is leverage. Rare and uncomfortable.</h6>
           <p className="principle-text">
             Most organisations say they want strategic thinking. Few are ready for what it actually changes.
           </p>
-        </div>
+        </GlassCard>
       </div>
     </section>
   )

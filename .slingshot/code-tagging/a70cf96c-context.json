@@ -6,6 +6,9 @@
   "promptMessage": {
     "65fe13bd": {
       "value": "extract the animated background and my photo and add in website."
+    },
+    "f02bfe78": {
+      "value": "add some 3d scroll effect"
     }
   },
   "localPrompts": {},
